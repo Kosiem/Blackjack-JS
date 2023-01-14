@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Pathway Gothic One', sans-serif;
+   
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    flex-wrap: wrap;
+    overflow:hidden
+}
+.endGame{
+    width: 100%;
+    text-align: center;
+    font-size: 150%;
+    color:white
+}
+.playerTokens{
+    font-size: 2em;
+    color: #00BDBD
+    
+}
+.dealer, .player{
+    flex: 100%;
+}
+.dealer{
+    align-items: baseline;
+    width: 100%;
+    text-align: center;
+}
+.player{
+    align-items: baseline;
+    width: 100%;
+    text-align: center;
+}
+.player > * {
+    vertical-align: middle;
+}
+.startBtn{
+    padding: 2%;
+    border-radius: 10%;
+    font-size: 2em;
+    background-color:#00BDBD;
+    color:red;
+    font-weight: bold;
+    align-self: center;
+    text-align: center;
+    margin-left: 20%;
+}
+.startBtn:hover{
+    transition: 0.5s all;
+    background-color: red;
+    color:#00BDBD;
+}
+.cardDealer, .cardPlayer{
+    width: 200px;
+    padding: 20px;
+    
+}
+.cardDealer:hover, .cardPlayer:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px
+}
+.cardBlank{
+    width: 190px;
+    padding: 20px;
+}
+.playBtn:hover{
+    background-color:white;
+    color:red;
+    transition: 0.5s all;
+}
+.playBtn, .bet{
+    visibility: hidden;
+    font-size: 2em;
+    padding:20px;
+    border-radius: 10%;
+    
+}
+img{
+    animation: 1.3s slide-up;
+    margin-top: 0%;
+}
+
+@keyframes slide-up {
+  from {
+    margin-top: 100%;
+    height: 100%;
+  }
+  to {
+    margin-top: 0%;
+    height: 100%;
+  }
+}
+
+.playerPoints, .dealerPoints{
+    font-size: 2em;
+    color:white;
+}
+.betPanel{
+    display: flex;
+    margin-left: 5%;
+    flex-wrap: wrap;
+    width: 35%;
+}
+.labelBet{
+    font-size: 2em;
+    color:white;
+}
